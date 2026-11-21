@@ -1,0 +1,33 @@
+name: Support request
+description: Something isn't working, or you have a question about Copyshape.
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out. This page is public, so please don't include passwords, purchase receipts or other personal details.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you try, and what did you expect to happen instead?
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: e.g. macOS 27.2
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: Copyshape version
+      description: Click the menu-bar icon ▸ Settings, or see the App Store page.
+      placeholder: e.g. 1.0.1
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: A screenshot of the text you tried to copy helps a lot. Crop out anything private.
